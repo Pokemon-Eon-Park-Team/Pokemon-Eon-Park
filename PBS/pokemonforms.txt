@@ -1068,6 +1068,12 @@ Pokedex = This species’ differing colors and patterns are apparently the resul
 FormName = Stretchy Form
 Pokedex = Bird Pokémon are its main prey. This Pokémon knows it’s weak, so it hunts with a partner.
 #-------------------------------
+[NIJIGIRI,1]
+FormName = Droopy Form
+#-------------------------------
+[NIJIGIRI,2]
+FormName = Stretchy Form
+#-------------------------------
 [SQUAWKABILLY,1]
 FormName = Blue Plumage
 Pokedex = Blue-feathered Squawkabilly view their green- feathered counterparts as rivals, since the latter make up the largest, most powerful groups.
