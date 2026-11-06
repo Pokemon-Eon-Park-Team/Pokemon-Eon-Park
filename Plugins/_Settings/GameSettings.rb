@@ -5,12 +5,12 @@ module Settings
 
     # Whether or not to display if the game is up to date with the server version
     # On the main menu
-    DISPLAY_VERSION_STATUS = true
+    DISPLAY_VERSION_STATUS = false
 
     # Modify if you're not Pokemon Tectonic!!
     # Host your own version file in the same format as the below file
     # And set this setting to the URL to that file
-    VERSION_SERVER_FILE_URL = "https://tectonicstorage.blob.core.windows.net/tectonicstorage/version_order.txt"
+    VERSION_SERVER_FILE_URL = ""
   
     #=============================================================================
   

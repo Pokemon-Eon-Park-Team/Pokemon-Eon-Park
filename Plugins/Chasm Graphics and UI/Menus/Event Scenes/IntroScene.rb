@@ -3,7 +3,7 @@ class IntroEventScene < EventScene
   # Splash screen images that appear for a few seconds and then disappear.
   SPLASH_IMAGES         = ['splash1']
   # The main title screen background image.
-  TITLE_BG_IMAGE        = 'tectonic_regigigas_title'
+  TITLE_BG_IMAGE        = 'eon park logo'
   TITLE_START_IMAGE     = 'start'
   TITLE_START_IMAGE_X   = 0
   TITLE_START_IMAGE_Y   = 322
@@ -87,7 +87,7 @@ class IntroEventScene < EventScene
     onUpdate.clear
     onCTrigger.clear
     # Play random cry
-    Pokemon.play_cry(:REGIGIGAS)
+    Pokemon.play_cry(:EEVEE)
     @pic.moveXY(0, 20, 0, 0)   # Adds 20 ticks (1 second) pause
     pictureWait
     # Fade out
