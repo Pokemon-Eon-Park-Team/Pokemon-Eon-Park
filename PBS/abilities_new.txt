@@ -465,10 +465,6 @@ Description = 33% of all move damage taken by this Pokémon is instead taken at 
 Name = Denticle Debris
 Description = When this Pokémon traps and binds a target, one hazard layer of Spikes is placed around the target.
 #-------------------------------
-[DEPLETE]
-Name = Deplete
-Description = Its attacks are critical against leeched targets.
-#-------------------------------
 [DESERTARMOR]
 Name = Desert Armor
 Description = Doubles this Pokémon's Defense in a sandstorm.
@@ -2005,6 +2001,10 @@ Flags = Uncopyable
 [SCHADENFREUDE]
 Name = Schadenfreude
 Description = Restores 1/4th health after any foe faints.
+#-------------------------------
+[SCORNFUL]
+Name = Scornful
+Description = Its attacks are critical against leeched targets.
 #-------------------------------
 [SCOUREDSILHOUETTE]
 Name = Scoured Silhouette

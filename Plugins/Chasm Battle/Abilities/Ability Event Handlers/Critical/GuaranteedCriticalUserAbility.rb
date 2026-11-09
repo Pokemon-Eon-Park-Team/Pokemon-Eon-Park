@@ -46,7 +46,7 @@ BattleHandlers::GuaranteedCriticalUserAbility.add(:STERN,
     }
 )
 
-BattleHandlers::GuaranteedCriticalUserAbility.add(:DEPLETE,
+BattleHandlers::GuaranteedCriticalUserAbility.add(:SCORNFUL,
     proc { |ability, _user, target, _battle, move|
         next true if target.leeched?
     }
