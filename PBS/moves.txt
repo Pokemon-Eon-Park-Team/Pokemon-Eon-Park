@@ -3513,7 +3513,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = RaiseUserSpAtk2
-Flags = CanProtect
+Flags = CanProtect,Sound
 EffectChance = 100
 Description = The user blows out raging flames as if singing a song, raising the user's Sp. Atk by two steps.
 #-------------------------------
