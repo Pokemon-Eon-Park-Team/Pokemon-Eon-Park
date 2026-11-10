@@ -865,6 +865,10 @@ Flags = MoonglowSynergy
 Name = Fumigate
 Description = Random added effects of wind-based moves are +50% more likely to occur.
 #-------------------------------
+[FUNERALDIRGE]
+Name = Funeral Dirge
+Description = When hit with a physical move, hits back instantly with Dirge.
+#-------------------------------
 [GALEFORCE]
 Name = Gale Force
 Description = Boosts the power of wind-based moves by 50%.
