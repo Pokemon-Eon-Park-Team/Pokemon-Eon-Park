@@ -17,6 +17,14 @@ BattleHandlers::UserAbilityStartOfMove.add(:MUTABLE,
   }
 )
 
+BattleHandlers::UserAbilityStartOfMove.add(:TRICKBOUQUET,
+  proc { |ability, user, targets, move, battle|
+    next if user.effectActive?(:FlowerUnveiled)
+    next unless moveUseTypeChangeAbility(ability, user, move, battle, true)
+    user.applyEffect(:FlowerUnveiled)
+  }
+)
+
 BattleHandlers::UserAbilityStartOfMove.add(:SHIFTINGFIST,
   proc { |ability, user, targets, move, battle|
     moveUseTypeChangeAbility(ability, user, move, battle, true) if move.punchingMove?

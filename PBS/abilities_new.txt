@@ -2488,6 +2488,10 @@ Description = Whenever a grounded foe attacks, this Pokémon gains priority agai
 Name = Trench Carver
 Description = This Pokémon's Speed is doubled while using recoil moves.
 #-------------------------------
+[TRICKBOUQUET]
+Name = Trick Bouquet
+Description = It changes its secondary type to that of the move it's about to use. This works only once each time this Pokémon enters battle.
+#-------------------------------
 [TUNEDOUT]
 Name = Tuned Out
 Description = Boosts the power of sound moves by 30%. Sound moves ignore the target's modified Defense and Sp. Def.

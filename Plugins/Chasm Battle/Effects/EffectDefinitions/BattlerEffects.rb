@@ -2398,6 +2398,11 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
+    :id => :FlowerUnveiled,
+    :real_name => "Flower Unveiled",
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
     :id => :DelayedReaction,
     :real_name => "Delayed Reaction",
     :type => :Array,
