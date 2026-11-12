@@ -347,6 +347,15 @@ BattleHandlers::TargetAbilityOnHit.add(:COUNTERFLOW,
   }
 )
 
+BattleHandlers::TargetAbilityOnHit.add(:FUNERALDIRGE,
+  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+        next unless move.physicalMove?
+        next if target.fainted?
+        next -30 * aiNumHits if aiCheck
+        battle.forceUseMove(target, :FIRGE, user.index, ability: ability)
+  }
+)
+
 BattleHandlers::TargetAbilityOnHit.add(:GUTPUNCH,
   proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next if target.fainted?
