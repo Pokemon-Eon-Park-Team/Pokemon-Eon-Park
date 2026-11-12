@@ -2006,6 +2006,10 @@ Flags = Uncopyable
 Name = Schadenfreude
 Description = Restores 1/4th health after any foe faints.
 #-------------------------------
+[SCORNFUL]
+Name = Scornful
+Description = Its attacks are critical against leeched targets.
+#-------------------------------
 [SCOUREDSILHOUETTE]
 Name = Scoured Silhouette
 Description = Upon entry during sandstorm, lowers foe's Attack and Sp. Atk by two steps.
