@@ -5157,6 +5157,18 @@ Flags = CanProtect,Uninvocable
 Description = The user wakes to unleash devastating tides. Can only be used while asleep, and wakes the user up.
 Animation = SURF
 #-------------------------------
+[WATERFOWLDANCE]
+Name = Waterfowl Dance
+Type = WATER
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = WaterfowlDance
+Flags = CanProtect,Dance
+Description = First consecutive use reduces the target's Speed. Second reduces its Attack and Sp. Atk by two steps. Third deals double damage.
+#-------------------------------
 [WATERLOG]
 Name = Waterlog
 Type = WATER

@@ -102,3 +102,52 @@ class PokeBattle_Move_BladesOfGrass < PokeBattle_Move
         return 3 + user.moveUsageCount(@id)
     end
 end
+
+#===============================================================================
+# Deals different effects depending on which step of the dance it is.
+# Step 1: Lower's the target's Speed.
+# Step 2: Lower's the target's Attack and Sp. Atk by 2 steps.
+# Step 3: Deals double damage.
+#===============================================================================
+class PokeBattle_Move_WaterfowlDance < PokeBattle_SnowballingMove
+    def initialize(battle, move)
+        @usageCountEffect = :WaterfowlDance
+        super
+    end
+
+    def pbShowAnimation(id, user, targets, hitNum = 0, showAnimation = true)
+        case user.countEffect(@usageCountEffect)
+        when 1
+            battle.pbDisplay(_INTL("{1} performs the first dance step!",user.pbThis))
+            id = :AQUATAIL
+        when 2
+            battle.pbDisplay(_INTL("{1} performs the second dance step!",user.pbThis))
+            id = :WATERFALL
+        when 3
+            battle.pbDisplay(_INTL("{1} performs the third and final dance step!",user.pbThis))
+            id = :CRABHAMMER
+        end
+        super
+    end
+
+    def pbBaseDamage(baseDmg, user, _target)
+        baseDmg *= 2 if user.effects[@usageCountEffect] >= 3
+        return baseDmg
+    end
+
+    def pbEffectAgainstTarget(user, target)
+        case user.countEffect(@usageCountEffect)
+        when 1
+            target.tryLowerStat(:SPEED, user, move: self)
+        when 2
+            target.pbLowerMultipleStatSteps(ATTACKING_STATS_2, user, move: self)
+        end
+    end
+
+    def pbEffectAfterAllHits(user, _target)
+        if user.effectAtMax?(@usageCountEffect)
+            battle.pbDisplay(_INTL("{1} finishes the Waterfowl Dance!", user.pbThis))
+            user.disableEffect(@usageCountEffect)
+        end
+    end
+end

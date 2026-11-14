@@ -2020,6 +2020,16 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
+    :id => :WaterfowlDance,
+    :real_name => "Waterfowl Step",
+    :type => :Integer,
+    :maximum => 3,
+    :resets_on_cancel => true,
+    :resets_on_move_start => true,
+    :snowballing_move_counter => true,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
     :id => :StunningCurl,
     :real_name => "Stunning Curl",
     :resets_eor	=> true,
