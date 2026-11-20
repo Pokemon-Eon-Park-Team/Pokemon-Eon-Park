@@ -413,4 +413,8 @@ module Settings
             _INTL("Progression"),
         ]
     end
+
+    #=============================================================================
+
+    CANON_PLAYER_NAME = _INTL("Placeholder")
 end
